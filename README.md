@@ -1,4 +1,4 @@
-# AMSKY 砂型3D打印运行成本与投资测算器 V4.0
+# AMSKY 砂型3D打印运行成本与投资测算器 V4.1
 
 网站：https://lpapaya.github.io/amsky-sand3d-cost-calculator/
 
@@ -10,6 +10,8 @@ index.html为图片、样式和脚本全部内嵌的独立网页。GitHub Pages�
 python3 -c 'import base64,pathlib; pathlib.Path("source.zip").write_bytes(base64.b64decode(pathlib.Path("amsky-calculator-v4-source.zip.b64").read_bytes()))'
 ```
 
-解压source.zip后运行npm ci、npm test、npm run typecheck、npm run build；将dist/calculator-offline.html重命名为index.html上传根目录即可更新。src/main.tsx引用App.tsx和domain.ts，旧components/utils为历史参考。
+解压source.zip后运行npm ci、npm test、npm run typecheck、npm run build；将dist/calculator-offline.html重命名为index.html上传根目录即可更新。src/main.tsx引用App.tsx和domain.ts。
 
-回用上限1–8次，默认8，不含新砂首次使用；首次回用在存放≤3天且砂斗≤7天窗口内免补，第三次总使用起默认补2‰、可调1–3‰。超窗按全部需补的保守预算计算，实际须工艺确认。到限退出与补新砂影响成本，不简单按砂量除以次数。再生线综合砂费默认200元/吨成型基砂，其他成本另计。轮廓剔除及有效回收率按实测校准；本工具不替代正式报价、技术协议或质量验证。
+回用上限1–8次，默认8，不含新砂首次使用；首次回用在回用砂存放≤3天（含砂斗时间）窗口内免补，第三次总使用起默认补2‰、可调1–3‰。超窗按全部需补的保守预算计算，实际须工艺确认。到限退出与补新砂影响成本，不简单按砂量除以次数。再生线综合砂费默认200元/吨成型基砂，其他成本另计。轮廓剔除及有效回收率按实测校准；本工具不替代正式报价、技术协议或质量验证。
+
+V4.1仅保留回用砂存放天数。折旧分设备和配套展示：120万元设备÷120月÷8000kg=1.25元/kg；31万元配套对应0.322917元/kg，总折旧1.572917元/kg。页面、复制方案与PDF同步列明。
